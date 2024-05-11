@@ -10,17 +10,17 @@ body {
   
 }
 
-/* Navbar  */
-nav {
+/* Navbar  */nav {
   background-color: #333;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 nav ul li {
@@ -37,12 +37,35 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #555;
 }
+
+.right-links {
+  display: flex;
+  align-items: center;
+}
+
+.right-links li {
+  margin-left: 10px;
+}
+
+.right-links li a img {
+  width: 30px; /* Adjust the size of the icons as needed */
+  height: auto;
+}
+
 footer{
   background-color: black;
   color: whitesmoke;
   font-family: 'Courier New', Courier, monospace;
   font-size: small;
   text-align: center;
+}
+
+
+.homepage-title {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 /* styling all sections */
@@ -90,18 +113,41 @@ footer{
       color: #666;
   }
 
+  #about {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #about p {
+    font-size: 18px;
+    line-height: 1.6; 
+    color: #333;
+  }
+  .about-box {
+    background-color: #f9f9f9; /* Background color of the box */
+    border: 2px solid #ccc; /* Border color and thickness */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    text-align: center; /* Center-align the text */
+  }
+  
+  
 /* Styling project tiles and project section */
+
+
 .project-tile {
   display: inline-block;
-  /* width: calc(33.33% - 20px); Adjust width as needed */
   margin: 10px;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   text-align: center;
+  height: 600px;
+  overflow: hidden;
 }
+
+
 
 /* Hover effect */
 .project-tile:hover {
